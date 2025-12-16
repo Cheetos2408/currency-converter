@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background: #f5f6fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app {
+    width: 360px;
+    max-width: 95%;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}
+
+.card {
+    background: #fefefe;
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.flag {
+    width: 36px;
+    height: 26px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+select {
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
+.amount {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: right;
+    color: #222;
+}
+
+.rate {
+    text-align: right;
+    font-size: 15px;
+    color: #666;
+    margin: 8px 0 16px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.keypad button {
+    background: #fff;
+    border: none;
+    padding: 18px 0;
+    font-size: 26px;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: 0.1s, box-shadow 0.2s;
+}
+
+.keypad button:hover {
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+}
+
+.keypad button:active {
+    transform: scale(0.95);
+}
+
+.keypad .icon {
+    font-size: 22px;
+}
+
+.next {
+    width: 100%;
+    margin-top: 25px;
+    padding: 16px;
+    background: linear-gradient(135deg, #2d6cdf, #3ea0ff);
+    color: white;
+    font-size: 20px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s, box-shadow 0.2s;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+}
+
+.next:hover {
+    box-shadow: 0 7px 22px rgba(0,0,0,0.15);
+}
+
+.next:active {
+    transform: scale(0.97);
+}
+
+@media (max-width: 400px) {
+    .app {
+        width: 95%;
+        padding: 20px;
+    }
+    .amount {
+        font-size: 28px;
+    }
+    .keypad button {
+        font-size: 22px;
+        padding: 16px 0;
+    }
+    .next {
+        font-size: 18px;
+        padding: 14px;
+    }
+}
+
+.keypad .key-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
