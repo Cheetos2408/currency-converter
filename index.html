@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Currency Converter</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="icons/png-clipart-computer-icons-currency-trade-currency-converter-text-trademark-thumbnail.png">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +15,6 @@
 <div class="app">
 
     <h2>Send international</h2>
-
 
     <div class="card">
         <div class="row">
@@ -24,27 +27,14 @@
                 <option value="CNY">CNY - Chinese Yuan</option>
                 <option value="INR">INR - Indian Rupee</option>
                 <option value="RUB">RUB - Russian Ruble</option>
-                <option value="CHF">CHF - Swiss Franc</option>
-                <option value="CAD">CAD - Canadian Dollar</option>
-                <option value="AUD">AUD - Australian Dollar</option>
-                <option value="TRY">TRY - Turkish Lira</option>
-                <option value="KRW">KRW - South Korean Won</option>
-                <option value="SGD">SGD - Singapore Dollar</option>
-                <option value="BRL">BRL - Brazilian Real</option>
-                <option value="ZAR">ZAR - South African Rand</option>
-                <option value="KZT">KZT - Kazakhstani Tenge</option>
                 <option value="KGS">KGS - Kyrgyzstani Som</option>
-                <option value="MXN">MXN - Mexican Peso</option>
             </select>
         </div>
-        <div class="amount">
-            <span id="fromAmount">0</span>
-        </div>
+        <div class="amount"><span id="fromAmount">0</span></div>
     </div>
 
-    <p class="rate">1 EUR = 90 INR</p>
+    <p class="rate">1 EUR = --</p>
 
-    
     <div class="card">
         <div class="row">
             <img id="toFlag" src="https://flagcdn.com/w40/in.png" class="flag">
@@ -53,50 +43,26 @@
                 <option value="USD">USD - US Dollar</option>
                 <option value="EUR">EUR - Euro</option>
                 <option value="GBP">GBP - British Pound</option>
-                <option value="JPY">JPY - Japanese Yen</option>
-                <option value="CNY">CNY - Chinese Yuan</option>
-                <option value="RUB">RUB - Russian Ruble</option>
-                <option value="CHF">CHF - Swiss Franc</option>
-                <option value="CAD">CAD - Canadian Dollar</option>
-                <option value="AUD">AUD - Australian Dollar</option>
-                <option value="TRY">TRY - Turkish Lira</option>
-                <option value="KRW">KRW - South Korean Won</option>
-                <option value="SGD">SGD - Singapore Dollar</option>
-                <option value="BRL">BRL - Brazilian Real</option>
-                <option value="ZAR">ZAR - South African Rand</option>
-                <option value="KZT">KZT - Kazakhstani Tenge</option>
                 <option value="KGS">KGS - Kyrgyzstani Som</option>
-                <option value="MXN">MXN - Mexican Peso</option>
             </select>
         </div>
-        <div class="amount">
-            <span id="toAmount">0</span>
-        </div>
+        <div class="amount"><span id="toAmount">0</span></div>
     </div>
 
-
-<div class="keypad">
-    <button onclick="press('1')">1</button>
-    <button onclick="press('2')">2</button>
-    <button onclick="press('3')">3</button>
-
-    <button onclick="press('4')">4</button>
-    <button onclick="press('5')">5</button>
-    <button onclick="press('6')">6</button>
-
-    <button onclick="press('7')">7</button>
-    <button onclick="press('8')">8</button>
-    <button onclick="press('9')">9</button>
-
-  
-    <button onclick="press('clear')" class="icon">
-        <img src="images/Broom.png" alt="Clear" class="key-img">
-    </button>
-    <button onclick="press('0')">0</button>
-   
-    <button onclick="press('del')" class="icon">⌫</button>
-</div>
-
+    <div class="keypad">
+        <button onclick="press('1')">1</button>
+        <button onclick="press('2')">2</button>
+        <button onclick="press('3')">3</button>
+        <button onclick="press('4')">4</button>
+        <button onclick="press('5')">5</button>
+        <button onclick="press('6')">6</button>
+        <button onclick="press('7')">7</button>
+        <button onclick="press('8')">8</button>
+        <button onclick="press('9')">9</button>
+        <button onclick="press('clear')">C</button>
+        <button onclick="press('0')">0</button>
+        <button onclick="press('del')">⌫</button>
+    </div>
 
     <button class="next">Next</button>
 
